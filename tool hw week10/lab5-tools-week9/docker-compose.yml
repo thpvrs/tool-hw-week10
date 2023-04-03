@@ -4,7 +4,7 @@
 
 services:
   backend:
-    # build: ./backend
+    build: .
     image: 63070104/img-backend:1.0
     ports: 
       - 8088:80
@@ -12,7 +12,7 @@ services:
       - back-tier
 
   frontend:
-    # build: ./hello-app
+    build: .
     image: 63070104/img-frontend:1.0
     ports: 
       - 3000:3000
